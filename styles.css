@@ -229,7 +229,7 @@ h1 {
   border: 1px solid rgba(182, 232, 255, 0.45);
   border-radius: 13px;
   color: #061225;
-  font-size: 18px;
+  font-size: 19px;
   font-weight: 700;
   letter-spacing: 0;
   transition: transform 180ms ease, box-shadow 180ms ease, background 180ms ease, filter 180ms ease;
@@ -1205,7 +1205,7 @@ h1 {
   .button {
     gap: 12px;
     padding-inline: 16px;
-    font-size: 17px;
+    font-size: 18px;
   }
 }
 
