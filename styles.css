@@ -939,13 +939,16 @@ h1 {
 
 .final-cta {
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-areas:
+    "heading heading"
+    "description button";
+  grid-template-columns: minmax(0, 1fr) max-content;
   overflow: hidden;
-  min-height: 260px;
-  align-items: center;
-  justify-content: space-between;
-  gap: 28px;
-  padding: 40px 48px;
+  align-items: end;
+  column-gap: 30px;
+  row-gap: 18px;
+  padding: 34px 42px;
   border: 1px solid rgba(119, 190, 255, 0.22);
   border-radius: 23px;
   background:
@@ -965,25 +968,34 @@ h1 {
   pointer-events: none;
 }
 
-.final-cta-copy,
+.final-cta-heading,
+.final-cta p,
 .final-button {
   position: relative;
   z-index: 1;
 }
 
+.final-cta-heading {
+  grid-area: heading;
+}
+
 .final-cta h2 {
-  margin-block: 13px 10px;
-  font-size: clamp(28px, 3.6vw, 40px);
+  margin: 10px 0 0;
+  font-size: clamp(27px, 3.2vw, 38px);
 }
 
 .final-cta p {
-  margin-bottom: 0;
+  grid-area: description;
+  max-width: 760px;
+  margin: 0;
   color: #a2b3d0;
   font-size: 15px;
+  line-height: 1.55;
 }
 
 .final-button {
-  flex: 0 0 auto;
+  grid-area: button;
+  justify-self: end;
 }
 
 .site-footer {
@@ -1290,14 +1302,22 @@ h1 {
 
   .final-cta {
     min-height: auto;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 22px;
+    grid-template-areas:
+      "heading"
+      "description"
+      "button";
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+    row-gap: 16px;
     padding: 30px 24px;
   }
 
   .final-cta h2 {
     font-size: 31px;
+  }
+
+  .final-button {
+    justify-self: end;
   }
 
   .site-footer {
