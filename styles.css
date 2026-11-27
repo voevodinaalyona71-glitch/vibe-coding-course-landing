@@ -145,7 +145,7 @@ a:focus-visible {
   grid-template-columns: 1.04fr 0.96fr;
   align-items: center;
   gap: 10px;
-  padding-block: 74px 76px;
+  padding-block: 64px 60px;
 }
 
 .hero-copy {
@@ -444,11 +444,11 @@ h1 {
 }
 
 .gift-section {
-  padding-block: 70px 96px;
+  padding-block: 60px 78px;
 }
 
 .faq-section {
-  padding-block: 32px 88px;
+  padding-block: 28px 68px;
 }
 
 .faq-section .section-heading {
@@ -769,7 +769,7 @@ h1 {
 }
 
 .program-section {
-  padding-block: 76px 83px;
+  padding-block: 64px 70px;
   border-top: 1px solid rgba(164, 196, 244, 0.08);
 }
 
@@ -1127,7 +1127,7 @@ h1 {
   .hero {
     min-height: 600px;
     grid-template-columns: 1fr 0.85fr;
-    padding-block: 58px;
+    padding-block: 50px;
   }
 
   h1 {
@@ -1171,7 +1171,7 @@ h1 {
     min-height: unset;
     grid-template-columns: 1fr;
     gap: 0;
-    padding-block: 64px 32px;
+    padding-block: 52px 24px;
   }
 
   .hero-copy {
@@ -1206,11 +1206,11 @@ h1 {
   }
 
   .gift-section {
-    padding-block: 52px 71px;
+    padding-block: 44px 56px;
   }
 
   .faq-section {
-    padding-block: 14px 62px;
+    padding-block: 12px 50px;
   }
 
   .section-heading {
@@ -1264,7 +1264,7 @@ h1 {
   }
 
   .program-section {
-    padding-block: 60px;
+    padding-block: 48px;
   }
 
   .program-heading {
